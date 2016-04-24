@@ -47,7 +47,7 @@ router.get('/', function(req, res, next) {
     short_name: 'tr'    
   });
 
-  measures = [ml._id, blank._id, sachet._id, pince._id, gr._id, sachet._id, sachet._id, blank._id, blank._id, blank._id, tranche._id, blank._id, ml._id, tranche._id, blank._id];
+  measures = [gr._id, blank._id, sachet._id, pince._id, gr._id, sachet._id, sachet._id, blank._id, blank._id, blank._id, tranche._id, blank._id, ml._id, tranche._id, blank._id];
   elements = ['farine', 'oeuf', 'levure chimique', 'sel', 'sucre', 'sucre vahiné', 'levure de boulanger', 'pain à hamburger', 'fromage carré', 'steack haché', 'jambon', 'ketchup', 'lait', 'pain de mie', 'herbe de provence'];
   for (var i = 0; i < elements.length; i++) {
     var elem = new Element({
