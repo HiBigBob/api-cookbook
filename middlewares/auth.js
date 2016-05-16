@@ -16,7 +16,7 @@ module.exports = function(req, res, next){
 	 *    ...in that order.
 	 */
 	var token = (req.body && req.body.access_token) || parsed_url.query.access_token || req.headers["x-access-token"];
-
+	
 	if (token) {
 		try {
 			var decoded = jwt.decode(token, config.secret)
@@ -29,13 +29,13 @@ module.exports = function(req, res, next){
 
 				if (!err) {
 					req.user = user
-					return next()
+					return next();
 				}
 			})
 		} catch (err) {
-			return next()
+			return next();
 		}
 	} else {
-		next()
+		next();
 	}
 }

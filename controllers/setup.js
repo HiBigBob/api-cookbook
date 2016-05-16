@@ -47,8 +47,8 @@ router.get('/', function(req, res, next) {
     short_name: 'tr'    
   });
 
-  measures = [gr._id, blank._id, sachet._id, pince._id, gr._id, sachet._id, sachet._id, blank._id, blank._id, blank._id, tranche._id, blank._id, ml._id, tranche._id, blank._id];
-  elements = ['farine', 'oeuf', 'levure chimique', 'sel', 'sucre', 'sucre vahiné', 'levure de boulanger', 'pain à hamburger', 'fromage carré', 'steack haché', 'jambon', 'ketchup', 'lait', 'pain de mie', 'herbe de provence'];
+  measures = [gr._id, blank._id, sachet._id, pince._id, gr._id, sachet._id, sachet._id, blank._id, blank._id, blank._id, tranche._id, blank._id, ml._id, tranche._id, blank._id, gr._id];
+  elements = ['farine', 'oeuf', 'levure chimique', 'sel', 'sucre', 'sucre vanillé', 'levure de boulanger', 'pain à hamburger', 'fromage carré', 'steack haché', 'jambon', 'ketchup', 'lait', 'pain de mie', 'herbe de provence', 'beurre'];
   for (var i = 0; i < elements.length; i++) {
     var elem = new Element({
       name: elements[i],
