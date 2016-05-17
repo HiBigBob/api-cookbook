@@ -4,11 +4,11 @@ var Element       = require('../models/element');
 
 router.get('/', function(req, res) {
   	Element.find({})
-	.populate('measure')
-	.exec(function (err, elements) {
-	 	if (err) return handleError(err);
+    .populate('measure')
+    .exec(function (err, elements) {
+      if (err) return handleError(err);
 	  	res.json(elements);
-	});
+    });
 });
 
 router.get('/:name', function(req, res){
