@@ -6,6 +6,7 @@ module.exports = mongoose.model('Recipe', new Schema({
     name: String,
 	done: Boolean,
 	minute: Number,
+	baking: Number,
 	degree: Number,
 	score: Number, 
 	type: String,
